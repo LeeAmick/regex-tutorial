@@ -1,49 +1,51 @@
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
-
+# Regex Tutorial
+Validation using Regular Expression
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regular expression we'll be examining is:
+
+^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$
+
 
 ## Table of Contents
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
 ### Anchors
+Anchors are special characters that assert a position at the start or end of a line.
+^    # Asserts the start of a line
+$    # Asserts the end of a line
+
 
 ### Quantifiers
-
-### OR Operator
+Quantifiers specify how many instances of a character or group should be matched.
++    # Matches one or more of the preceding element
+{2,} # Matches two or more of the preceding element
 
 ### Character Classes
-
-### Flags
+Character classes match any one of a set of characters.
+\w    # Matches any word character (alphanumeric + underscore)
+\d    # Matches any digit
+.     # Matches any character except a newline
 
 ### Grouping and Capturing
+Parentheses are used for grouping and capturing parts of a regular expression.
+(ab)+    # Matches "ab", "abab", "ababab", etc.
+(a|b)    # Matches "a" or "b"
 
 ### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Bracket expressions match any one of a set of characters enclosed in square brackets.
+[a-zA-Z]   # Matches any uppercase or lowercase letter
+[0-9]      # Matches any digit
+[^a-z]     # Matches any character that is not a lowercase letter
 
 ## Author
+This tutorial was written by Lee Amick
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+[GitHub - LeeAmick](https://github.com/LeeAmick)
